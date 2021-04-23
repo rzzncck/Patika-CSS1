@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.grediant{
+    background: linear-gradient(90deg,rgba(45,156,219,.6),rgba(155,81,224,.6));
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    -webkit-box-shadow: 9px 11px 5px 3px #2A1D5B; 
+box-shadow: 4px 4px 4px 1px #2A1D5B;
+}
+.container{
+    
+    width:1000px ;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 50px auto  0 ; /*  yukarı sağ aşşagı sol  (x y z t) şeklinde yazdık*/
+    
+}
+.left-bar {
+    width: 200px;
+    float: left;}
+.content {
+    float: left;
+    width: 800px;
+}
+.card {
+    width: 20%; /* % ile içerideki alanın yüzdesi kadar değişiklik yaptık.*/ 
+    float: left;
+    padding: 5%;
+    margin-right: 3%;
+    background-color: rgb(148, 147, 147);
+    border-radius: 10px; /*backgroundın köşelerini yuvarlatma*/
+}
+.box {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    float:left;
+}
+.clear{
+    clear: both; /*floatı temizlemede kullanılır. */
+}
+.bg-red{
+    background-color: red;
+}
+.bg-green{   
+    background-color: green;
+}
+.bg-yellow{   
+    background-color: yellow;
+}

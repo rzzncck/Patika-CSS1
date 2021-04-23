@@ -1,0 +1,66 @@
+.color-blue.fw-bold{ /* iki class birden "color-blue fw-bold  şeklinde yazılırsa çalışır. (koşul1)  burada if var. class-green içinde bir yerde fw-lightr varsa orası tek iki şartı uygular geri kalan yerler uygulamaz. */
+color: rgb(25, 0, 255);
+font-weight: bold;}
+
+
+.color-green .fw-lightr{ /* bu şart if koşulu gibi (koşul2) 
+                            burada if var. class-green içinde bir yerde fw-lightr varsa orası tek iki şartı uygular geri kalan yerler uygulamaz. */
+    color: rgb(0, 255, 106);
+    font-weight: lighter;}
+   /* 
+    /* li:first-child{ sadece ilk list'e uygulamada işe yarar
+        color:rgb(168, 11, 11)
+    }
+    
+   li:last-child{ sadece son list'e uygulamada işe yarar.
+       color:rgb(201, 245, 8);
+
+   }
+    *//*
+   li:nth-child(odd){ her listenin belirli yerlerine uygula demek
+                    virgul ile kullanılmaz 
+                        odd sadece tek sayılara uygular
+                        even sadece çift sayıları alır. 
+                        (3n+1) şeklinde de yazılabilir.
+    background: red; 
+
+   }*/
+   /* [name]{ /* Özellik Seçiciler (Attribute Selectors)*/
+    color: orange; /* bunun olayı tüm name'lere uygular
+  } */
+  /*
+  .btn[disabled] { Burada snıfı btn ve niteliği(attribute) [disabled] olan butona CSS uyguladık
+    color: rgb(35, 205, 235);
+  }*/
+
+  /* Burada tam eşleşen özelliğe CSS uyguladık. 
+  Büyük-küçük harf duyarlılığı vardır.
+  div[title="denemefalan"] {
+    background-color: rgb(116, 14, 14);
+  }
+  */
+
+  div[class$="test"] {
+    background: rgba(9, 95, 91, 0.473);
+  } /*Burada $= ifadesi ile class özelliği sonunda "test" içeren divlere eriştik.*/
+
+  a[href*="https"][href$="com"] {
+    color: rgb(255, 9, 9);
+}
+p > span{  /*p içindeki span'a css uygular*/
+    color:orange;
+  }
+  p > span >b{ /*p içindeki span içindeki b'ye css uygular*/
+    color:blue;
+  }
+  div > ul >li#first{ /*div içindeki ul içindeki li'nin ilkine css uygular*/
+    color:red;
+  }
+
+  ul ~ p{
+    color:orange;
+  }
+  ul + p{
+    color:green;
+  }
+  
